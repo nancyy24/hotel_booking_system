@@ -5,11 +5,14 @@ const all_room = require("../controllers/roomcontroller")
 const userdetails = require("../controllers/usercontroller")
 const bookedrooms = require("../controllers/bookroom")
 const payment = require("../controllers/paymentgateway")
+const location = require("../controllers/locationcontroller");
+
 
 router.get("/api/all_room",all_room.get_all_room)
 router.get("/api/get-room-details-by-id/:id",all_room.getRoomDetailsById);
 router.get("/api/getallroombookings",bookedrooms.getallbookings)
 router.get("/api/getallusers",userdetails.getallusers)
+router.get("/api/get-location",location.getlocationlist);
 router.post("/api/sign-up",userdetails.signUp)
 router.post("/api/login",userdetails.login)
 router.post("/api/bookedrooms",bookedrooms.bookroom)
@@ -18,5 +21,7 @@ router.post("/api/cancelroom",bookedrooms.cancelrooms)
 router.post("/api/addroom",all_room.addroomhotel)
 router.post("/api/payment/gen-order",payment.getOrderId)
 router.post("/api/payment/verify",payment.verifyPayment)
+router.post("/api/filter",all_room.filterData);
+
 
 module.exports = router 

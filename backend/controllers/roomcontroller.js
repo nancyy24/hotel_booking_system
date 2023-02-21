@@ -61,3 +61,45 @@ module.exports.addroomhotel = async(request,response)=>{
 
     }
 }
+
+
+module.exports.filterData = async (request,response)=>
+{   let { hcost, lcost,sort,roomtypeid,location_id} = request.body
+    // let filter={
+    //     location_id:1
+    // }
+
+    // sort +1 the low to high
+    // sort -1 then high to low
+    if(sort == undefined){
+        sort =1
+    }
+
+    let filter={}
+   
+    if(hcost !== undefined && lcost !== undefined){
+        hcost = hcost.toString();
+        lcost = lcost.toString();
+        filter["costperday"]={ $gte :lcost, $lte:hcost } 
+}
+
+if(roomtypeid !== undefined) {
+    filter["roomtypeid"] = roomtypeid
+}
+
+if(location_id !== undefined) {
+    filter["location_id"] = location_id
+}
+let result = await roomModal.find(filter).sort({
+    costperday:sort
+})
+
+response.status(200).send({
+
+    status:true,
+    result,
+    filter
+})
+
+
+}
