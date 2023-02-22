@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin:0px;
+    padding: 0px;
+    color: black;
+    font-weight: bold;
+    box-sizing: border-box;
+ }
+.headings{
+    font-family: 'Moon Dance', cursive;
+}
+.filter-section{
+    /* border: 2px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    height: 105vh;
+    /* border: 1px solid black; */
+}
+
+.space{
+    margin-top: 80px;
+}
+.room-section{
+    /* border: 2px solid black; */
+    padding:5px;
+
+}
+.room-sec{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.room-img{
+    /* align-items: center;
+    justify-content: center; */
+    margin: auto;
+    width: 70%;
+    height: 250px;
+    /* border: 2px solid black; */
+    padding: 0px;
+    border-radius: 40px;;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* .descrip-box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; 
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+} */
+
+.ant-picker .ant-picker-range{
+border: 1px solid black !important;
+color:black !important
+
+}
+
+.ant-picker-input input{
+    color:black !important
+}
+.ant-picker-decade-btn{
+    color:black !important   
+}
+
+.ant-picker-panel{
+    color:black !important   
+
+}
+
+.searchbutton{
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width:992px) and (max-width:1444px) {
+    .filter-section{
+        height: 110vh !important;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .filter-section{
+        height: 110vh !important;
+    }
+}
+
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .filter-section{
+        height: 110vh !important;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .filter-section{
+        height: 100vh !important;
+    }
+}
