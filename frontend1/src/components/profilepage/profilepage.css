@@ -1,0 +1,28 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.oops-box{
+    width:80vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin :auto;
+    background-color:rgb(149, 245, 235)
+}
+
+@media screen and (max-width:800px) {
+    .overview-box{
+        margin:auto !important;
+        width:70% !important;
+    }
+    .contact-box{
+        margin:auto !important;
+        width:70% !important;
+    }
+
+}
